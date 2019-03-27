@@ -138,7 +138,9 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Application](
 	[ApplicationID] [int] IDENTITY(1,1) NOT NULL,
-	[RequestID] [int] NOT NULL,
+	[FirstName][varchar](50)NOT NULL,
+	[LastName][varchar](50)NOT NULL,
+	[Email][varchar](100)NOT NULL, 
 	[EmployerID] [int] NOT NULL,
 	[OpportunityID] [int] NOT NULL,
 	[StudentID] [int] NOT NULL,
